@@ -1,0 +1,52 @@
+---
+version: 0.1
+globalTimeout: 150
+testSuiteTimeout: 150
+testSuiteStep: 150
+
+runson: win
+retryOnFailure: false
+
+maxRetries: 1
+concurrency: 1
+
+tunnel: true
+
+env:
+  # PAT: ${{ .secrets.testKey }}
+  CACHE_DIR: m2_cache_dir
+
+cacheKey: '{{ checksum "pom.xml" }}'
+cacheDirectories:
+  - $CACHE_DIR
+
+matrix:
+  xmlFile: ["PC_PersonalAutoSuite"]
+
+runtime:
+      language: java
+      version: 11
+      
+pre:
+  - mkdir m2_cache_dir
+  - mvn -Dmaven.repo.local=$CACHE_DIR -Dmaven.test.skip=true clean install
+  
+testSuites:
+  - mvn test `-Dtestngxml=$xmlFile
+  
+mergeArtifacts: true
+
+uploadArtefacts:
+ - name: ExtentReports
+   path:
+    - reports
+    
+report: true
+
+partialReports:
+    type: json
+    location: reports/json
+    frameworkName: extent
+    
+jobLabel: [GW,PC_PersonalAutoSuite]
+  

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="10" parallel="methods" name="Failed suite [PC_InlandMarineSuite]" guice-stage="DEVELOPMENT" verbose="5">
+  <parameter name="webSite" value="http://172.24.135.200:8480/pc/PolicyCenter.do"/>
+  <parameter name="reportPortal" value="Yes"/>
+  <parameter name="cCWebSite" value="http://3.139.188.17:8080/cc/ClaimCenter.do"/>
+  <parameter name="deviceHost" value="localhost"/>
+  <parameter name="devicePort" value="4444"/>
+  <parameter name="browserName" value="chrome"/>
+  <parameter name="pCWebSite" value="http://172.24.135.200:8480/pc/PolicyCenter.do"/>
+  <listeners>
+    <listener class-name="com.aspire.guidewire.utils.EmailReport"/>
+    <listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener"/>
+  </listeners>
+  <test thread-count="10" parallel="methods" name="Report(failed)" verbose="5">
+    <classes>
+      <class name="com.aspire.guidewire.pc.testscripts.PC_InlandMarineSuite">
+        <methods>
+          <include name="init"/>
+          <include name="TC146" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.aspire.guidewire.pc.testscripts.PC_InlandMarineSuite -->
+    </classes>
+  </test> <!-- Report(failed) -->
+</suite> <!-- Failed suite [PC_InlandMarineSuite] -->

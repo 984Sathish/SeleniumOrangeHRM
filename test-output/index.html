@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-PC_InlandMarineSuite" class="navigator-link">
+              <span class="suite-name border-passed">PC_InlandMarineSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-PC_InlandMarineSuite" class="navigator-link ">
+                    <span>C:\Users\sathish.suresh\eclipse-workspace\orangeHRMTestAutomation\testxml\sample.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-PC_InlandMarineSuite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-PC_InlandMarineSuite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-PC_InlandMarineSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-PC_InlandMarineSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-PC_InlandMarineSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-PC_InlandMarineSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">2 methods,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-PC_InlandMarineSuite" class="hide-methods passed suite-PC_InlandMarineSuite"> (hide)</a> <!-- hide-methods passed suite-PC_InlandMarineSuite -->
+                      <a href="#" panel-name="suite-PC_InlandMarineSuite" class="show-methods passed suite-PC_InlandMarineSuite"> (show)</a> <!-- show-methods passed suite-PC_InlandMarineSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-PC_InlandMarineSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PC_InlandMarineSuite" title="com.OrangeHRM.testscripts.AdminTestSuite" class="method navigator-link" hash-for-method="TC101(chrome)">TC101(chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-PC_InlandMarineSuite" title="com.OrangeHRM.testscripts.AdminTestSuite" class="method navigator-link" hash-for-method="TC102(chrome)">TC102(chrome)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-PC_InlandMarineSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-PC_InlandMarineSuite" class="panel PC_InlandMarineSuite">
+          <div class="suite-PC_InlandMarineSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.OrangeHRM.testscripts.AdminTestSuite</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC101(chrome)">
+                  </a> <!-- TC101(chrome) -->
+                  <span class="method-name">TC101</span>
+                  <span class="parameters">(chrome)</span>
+                  <em>
+(Create a System User(Admin))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC102(chrome)">
+                  </a> <!-- TC102(chrome) -->
+                  <span class="method-name">TC102</span>
+                  <span class="parameters">(chrome)</span>
+                  <em>
+(Verify and Delete user(Admin))                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-PC_InlandMarineSuite-class-passed -->
+        </div> <!-- panel PC_InlandMarineSuite -->
+        <div panel-name="test-xml-PC_InlandMarineSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\sathish.suresh\eclipse-workspace\orangeHRMTestAutomation\testxml\sample.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;PC_InlandMarineSuite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;5&quot;&gt;
+  &lt;parameter name=&quot;webSite&quot; value=&quot;https://opensource-demo.orangehrmlive.com&quot;/&gt;
+  &lt;parameter name=&quot;reportPortal&quot; value=&quot;Yes&quot;/&gt;
+  &lt;parameter name=&quot;deviceHost&quot; value=&quot;localhost&quot;/&gt;
+  &lt;parameter name=&quot;devicePort&quot; value=&quot;4444&quot;/&gt;
+  &lt;parameter name=&quot;browserName&quot; value=&quot;chrome&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.OrangeHRM.utils.EmailReport&quot;/&gt;
+    &lt;listener class-name=&quot;com.OrangeHRM.utils.LiveReportListener&quot;/&gt;
+    &lt;listener class-name=&quot;com.OrangeHRM.utils.RetryListener&quot;/&gt;
+    &lt;listener class-name=&quot;com.epam.reportportal.testng.ReportPortalTestNGListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;Report&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.OrangeHRM.testscripts.AdminTestSuite&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Report --&gt;
+&lt;/suite&gt; &lt;!-- PC_InlandMarineSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-PC_InlandMarineSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for PC_InlandMarineSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Report (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-PC_InlandMarineSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for PC_InlandMarineSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-PC_InlandMarineSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for PC_InlandMarineSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_PC_InlandMarineSuite');
+function tableData_PC_InlandMarineSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(2);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'TC102')
+data.setCell(0, 2, 'com.OrangeHRM.testscripts.AdminTestSuite')
+data.setCell(0, 3, 53439);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TC101')
+data.setCell(1, 2, 'com.OrangeHRM.testscripts.AdminTestSuite')
+data.setCell(1, 3, 47291);
+window.suiteTableData['PC_InlandMarineSuite']= { tableData: data, tableDiv: 'times-div-PC_InlandMarineSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-PC_InlandMarineSuite">
+              </div> <!-- times-div-PC_InlandMarineSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-PC_InlandMarineSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for PC_InlandMarineSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC102(chrome)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:54:22 158 - TestCaseID:: TC102</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:54:37 161 - <b>16</b> - Driver::initialize::Get - com.OrangeHRM.utils.WebDriverFactory.getDriver(WebDriverFactory.java:756)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:54:37 163 - WebDriver session: ChromeDriver: chrome on windows (09f761342cf664b7d51ef8e423be1f43)</small> </font> </div></span>
+                <span class="reporter-method-output">&emsp;<div class="test-title"> <strong><font size = "3" color = "#000080">Verify and Delete user(Admin)</font> </strong> </div>&emsp;<div><strong>Steps:</strong></div><!-- Report -->&emsp;</span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:54:37 167 - Fetching test data from excel sheet</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:54:54 702 - Entered value Admin in Username field</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:54:56 046 - Entered value admin123 in Password field</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:54:56 105 - Webelement dimension: (419, 46)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:54:58 502 - Clicked on Login button</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Login to Application&emsp;<a href=".\ScreenShot\TC102_2.png" target="_blank" >[ScreenShot]</a></div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:00 867 - Page URL:: https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:00 867 - <b>0</b> - Page Load Wait: (Sync) - com.OrangeHRM.utils.WaitUtils.waitForPageLoad(WaitUtils.java:50)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:01 180 - [[ChromeDriver: chrome on windows (09f761342cf664b7d51ef8e423be1f43)] -> css selector: p[class*='orangehrm-copyright']] displayed</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:01 274 - [[ChromeDriver: chrome on windows (09f761342cf664b7d51ef8e423be1f43)] -> css selector: span[class*='oxd-main-menu-item--name']] displayed</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:01 362 - PIM Element displayed</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:01 416 - Webelement dimension: (39, 19)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:03 195 - Clicked on PIM</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Main menu : PIM selected&emsp;<a href=".\ScreenShot\TC102_4.png" target="_blank" >[ScreenShot]</a></div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:03 815 - Page URL:: https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewemployeelist</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:03 816 - <b>0</b> - Page Load Wait: (Sync) - com.OrangeHRM.utils.WaitUtils.waitForPageLoad(WaitUtils.java:50)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:03 868 - [[ChromeDriver: chrome on windows (09f761342cf664b7d51ef8e423be1f43)] -> css selector: h6[class*='oxd-topbar-header']] displayed</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:04 090 - Webelement dimension: (109, 30)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:05 328 - Clicked on Add button</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:06 498 - Entered value Dave in FirstName</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:07 828 - Entered value Homenick in LastName</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:08 522 - Entered value 7 in Employeee Id</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:08 567 - Webelement dimension: (100, 31)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:08 682 - Clicked on Save button</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:09 502 - [[ChromeDriver: chrome on windows (09f761342cf664b7d51ef8e423be1f43)] -> css selector: div[class*='oxd-toast--success']] displayed</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:09 580 - [[ChromeDriver: chrome on windows (09f761342cf664b7d51ef8e423be1f43)] -> css selector: span[class*='oxd-main-menu-item--name']] displayed</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:09 666 - Admin Element displayed</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:09 728 - Webelement dimension: (56, 19)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:10 891 - Clicked on Admin</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Main menu : Admin selected&emsp;<a href=".\ScreenShot\TC102_6.png" target="_blank" >[ScreenShot]</a></div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:11 135 - Page URL:: https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewsystemusers</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:11 135 - <b>0</b> - Page Load Wait: (Sync) - com.OrangeHRM.utils.WaitUtils.waitForPageLoad(WaitUtils.java:50)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:11 572 - [[ChromeDriver: chrome on windows (09f761342cf664b7d51ef8e423be1f43)] -> css selector: h5[class*='oxd-table-filter-title']] displayed</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:11 606 - Webelement dimension: (109, 30)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:12 227 - Clicked on Add button</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:12 842 - User Role Element displayed</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:12 870 - Webelement dimension: (421, 45)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:12 922 - Clicked on User Role</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:12 993 - Options elements displayed: 2</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:13 032 - Options elements displayed size: 2</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:13 074 - Webelement dimension: (36, 16)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:13 166 - Clicked on Admin</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;User Role: Admin selected&emsp;<a href=".\ScreenShot\TC102_9.png" target="_blank" >[ScreenShot]</a></div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;User Role: Admin selected&emsp;<a href=".\ScreenShot\TC102_10.png" target="_blank" >[ScreenShot]</a></div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:18 405 - Options Element displayed</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:18 426 - Webelement dimension: (412, 35)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:18 487 - Clicked on Option field</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Employee Name: Dave Homenick selected&emsp;<a href=".\ScreenShot\TC102_13.png" target="_blank" >[ScreenShot]</a></div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:18 826 - Status Element displayed</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:18 859 - Webelement dimension: (421, 45)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:18 931 - Clicked on Status</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:18 977 - Options elements displayed: 2</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:19 087 - Options elements displayed size: 2</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:19 155 - Webelement dimension: (43, 16)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:19 238 - Clicked on Enabled</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Status: Enabled selected&emsp;<a href=".\ScreenShot\TC102_15.png" target="_blank" >[ScreenShot]</a></div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Status: Enabled selected&emsp;<a href=".\ScreenShot\TC102_17.png" target="_blank" >[ScreenShot]</a></div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:20 048 - Username Element displayed</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:20 625 - Entered value julian.vonrueden in Username</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Username: julian.vonrueden selected&emsp;<a href=".\ScreenShot\TC102_19.png" target="_blank" >[ScreenShot]</a></div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:21 040 - Password Element displayed</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:21 612 - Entered value j2g4r9rg in Password</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Password: j2g4r9rg selected&emsp;<a href=".\ScreenShot\TC102_21.png" target="_blank" >[ScreenShot]</a></div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:21 936 - Confirm Password Element displayed</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:22 448 - Entered value j2g4r9rg in Confirm Password</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Confirm Password: j2g4r9rg selected&emsp;<a href=".\ScreenShot\TC102_22.png" target="_blank" >[ScreenShot]</a></div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:22 978 - Webelement dimension: (100, 31)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:23 161 - Clicked on Save button</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:25 054 - [[ChromeDriver: chrome on windows (09f761342cf664b7d51ef8e423be1f43)] -> css selector: div[class*='oxd-toast--success']] displayed</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:25 086 - [[ChromeDriver: chrome on windows (09f761342cf664b7d51ef8e423be1f43)] -> css selector: span[class*='oxd-main-menu-item--name']] displayed</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:25 115 - Admin Element displayed</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:25 144 - Webelement dimension: (56, 19)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:26 352 - Clicked on Admin</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Main menu : Admin selected&emsp;<a href=".\ScreenShot\TC102_23.png" target="_blank" >[ScreenShot]</a></div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:26 570 - Page URL:: https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewsystemusers</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:26 572 - <b>0</b> - Page Load Wait: (Sync) - com.OrangeHRM.utils.WaitUtils.waitForPageLoad(WaitUtils.java:50)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:26 940 - [[ChromeDriver: chrome on windows (09f761342cf664b7d51ef8e423be1f43)] -> css selector: h5[class*='oxd-table-filter-title']] displayed</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:26 974 - Username Element displayed</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:27 648 - Entered value julian.vonrueden in Username</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Username: julian.vonrueden selected&emsp;<a href=".\ScreenShot\TC102_24.png" target="_blank" >[ScreenShot]</a></div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:27 895 - Webelement dimension: (107, 31)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:27 963 - Clicked on Search button</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:28 545 - Table rows Element displayed</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:28 591 - Table rows elements displayed size: 1</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:28 658 - [[ChromeDriver: chrome on windows (09f761342cf664b7d51ef8e423be1f43)] -> xpath: //span[text()='(1) Record Found']] displayed</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:28 807 - Text value displayed for Employee list column : julian.vonrueden</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:28 889 - Text value displayed for Employee list column : Admin</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:28 981 - Text value displayed for Employee list column : Dave Homenick</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:29 055 - Text value displayed for Employee list column : Enabled</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Given Details is verified successfully&emsp;<a href=".\ScreenShot\TC102_25.png" target="_blank" >[ScreenShot]</a></div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:29 374 - Webelement dimension: (36, 36)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:29 465 - Clicked on Delete icon</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:29 511 - Webelement dimension: (151, 31)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:29 613 - Clicked on Yes, Delete</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;julian.vonrueden Deleted successfully&emsp;<a href=".\ScreenShot\TC102_26.png" target="_blank" >[ScreenShot]</a></div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:30 215 - [[ChromeDriver: chrome on windows (09f761342cf664b7d51ef8e423be1f43)] -> css selector: div[class*='oxd-toast--success']] displayed</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Test Passed. </strong></font> </div>&emsp;</span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:30 220 - WebDriver session: ChromeDriver: chrome on windows (09f761342cf664b7d51ef8e423be1f43)</small> </font> </div></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">TC101(chrome)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:54:22 113 - TestCaseID:: TC101</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:54:36 927 - <b>16</b> - Driver::initialize::Get - com.OrangeHRM.utils.WebDriverFactory.getDriver(WebDriverFactory.java:756)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:54:36 943 - WebDriver session: ChromeDriver: chrome on windows (d0b82a78e69a0ba52cfe404167225df6)</small> </font> </div></span>
+                <span class="reporter-method-output">&emsp;<div class="test-title"> <strong><font size = "3" color = "#000080">Create a System User(Admin)</font> </strong> </div>&emsp;<div><strong>Steps:</strong></div><!-- Report -->&emsp;</span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:54:37 025 - Fetching test data from excel sheet</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:54:51 901 - Entered value Admin in Username field</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:54:52 323 - Entered value admin123 in Password field</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:54:52 358 - Webelement dimension: (419, 46)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:54:54 589 - Clicked on Login button</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Login to Application&emsp;<a href=".\ScreenShot\TC101_1.png" target="_blank" >[ScreenShot]</a></div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:54:55 387 - Page URL:: https://opensource-demo.orangehrmlive.com/web/index.php/dashboard/index</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:54:55 387 - <b>0</b> - Page Load Wait: (Sync) - com.OrangeHRM.utils.WaitUtils.waitForPageLoad(WaitUtils.java:50)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:54:55 464 - [[ChromeDriver: chrome on windows (d0b82a78e69a0ba52cfe404167225df6)] -> css selector: p[class*='orangehrm-copyright']] displayed</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:54:55 535 - [[ChromeDriver: chrome on windows (d0b82a78e69a0ba52cfe404167225df6)] -> css selector: span[class*='oxd-main-menu-item--name']] displayed</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:54:55 862 - PIM Element displayed</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:54:55 895 - Webelement dimension: (39, 19)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:02 970 - Clicked on PIM</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Main menu : PIM selected&emsp;<a href=".\ScreenShot\TC101_3.png" target="_blank" >[ScreenShot]</a></div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:03 243 - Page URL:: https://opensource-demo.orangehrmlive.com/web/index.php/pim/viewemployeelist</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:03 244 - <b>0</b> - Page Load Wait: (Sync) - com.OrangeHRM.utils.WaitUtils.waitForPageLoad(WaitUtils.java:50)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:03 722 - [[ChromeDriver: chrome on windows (d0b82a78e69a0ba52cfe404167225df6)] -> css selector: h6[class*='oxd-topbar-header']] displayed</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:03 772 - Webelement dimension: (109, 31)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:05 055 - Clicked on Add button</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:06 119 - Entered value Dia in FirstName</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:06 728 - Entered value Zieme in LastName</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:07 550 - Entered value 17 in Employeee Id</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:07 616 - Webelement dimension: (100, 31)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:07 744 - Clicked on Save button</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:08 828 - [[ChromeDriver: chrome on windows (d0b82a78e69a0ba52cfe404167225df6)] -> css selector: div[class*='oxd-toast--success']] displayed</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:08 872 - [[ChromeDriver: chrome on windows (d0b82a78e69a0ba52cfe404167225df6)] -> css selector: span[class*='oxd-main-menu-item--name']] displayed</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:08 915 - Admin Element displayed</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:08 951 - Webelement dimension: (56, 19)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:10 064 - Clicked on Admin</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Main menu : Admin selected&emsp;<a href=".\ScreenShot\TC101_5.png" target="_blank" >[ScreenShot]</a></div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:10 302 - Page URL:: https://opensource-demo.orangehrmlive.com/web/index.php/admin/viewsystemusers</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:10 303 - <b>0</b> - Page Load Wait: (Sync) - com.OrangeHRM.utils.WaitUtils.waitForPageLoad(WaitUtils.java:50)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:10 855 - [[ChromeDriver: chrome on windows (d0b82a78e69a0ba52cfe404167225df6)] -> css selector: h5[class*='oxd-table-filter-title']] displayed</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:10 917 - Webelement dimension: (109, 31)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:11 508 - Clicked on Add button</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:12 124 - User Role Element displayed</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:12 179 - Webelement dimension: (421, 45)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:12 268 - Clicked on User Role</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:12 329 - Options elements displayed: 2</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:12 364 - Options elements displayed size: 2</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:12 412 - Webelement dimension: (22, 16)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:12 501 - Clicked on ESS</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;User Role: ESS selected&emsp;<a href=".\ScreenShot\TC101_7.png" target="_blank" >[ScreenShot]</a></div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;User Role: ESS selected&emsp;<a href=".\ScreenShot\TC101_8.png" target="_blank" >[ScreenShot]</a></div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:17 707 - Options Element displayed</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:17 729 - Webelement dimension: (412, 35)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:17 777 - Clicked on Option field</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Employee Name: Dia Zieme selected&emsp;<a href=".\ScreenShot\TC101_11.png" target="_blank" >[ScreenShot]</a></div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:18 069 - Status Element displayed</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:18 091 - Webelement dimension: (421, 45)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:18 137 - Clicked on Status</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:18 164 - Options elements displayed: 2</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:18 186 - Options elements displayed size: 2</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:18 238 - Webelement dimension: (43, 16)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:18 292 - Clicked on Enabled</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Status: Enabled selected&emsp;<a href=".\ScreenShot\TC101_12.png" target="_blank" >[ScreenShot]</a></div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Status: Enabled selected&emsp;<a href=".\ScreenShot\TC101_14.png" target="_blank" >[ScreenShot]</a></div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:18 847 - Username Element displayed</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:19 410 - Entered value merrill.lemke in Username</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Username: merrill.lemke selected&emsp;<a href=".\ScreenShot\TC101_16.png" target="_blank" >[ScreenShot]</a></div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:19 726 - Password Element displayed</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:20 216 - Entered value gw97iwyjh in Password</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Password: gw97iwyjh selected&emsp;<a href=".\ScreenShot\TC101_18.png" target="_blank" >[ScreenShot]</a></div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:20 736 - Confirm Password Element displayed</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:21 241 - Entered value gw97iwyjh in Confirm Password</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-message">&emsp;Confirm Password: gw97iwyjh selected&emsp;<a href=".\ScreenShot\TC101_20.png" target="_blank" >[ScreenShot]</a></div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:21 492 - Webelement dimension: (100, 31)</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:21 543 - Clicked on Save button</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:23 472 - [[ChromeDriver: chrome on windows (d0b82a78e69a0ba52cfe404167225df6)] -> css selector: div[class*='oxd-toast--success']] displayed</small> </font> </div></span>
+                <span class="reporter-method-output"><div class="test-result"><br><font color="green"><strong> Test Passed. </strong></font> </div>&emsp;</span>
+                <span class="reporter-method-output"><div class="test-event"> <font color="maroon"> <small> &emsp; &emsp;--- 24 Jan 15:55:23 478 - WebDriver session: ChromeDriver: chrome on windows (d0b82a78e69a0ba52cfe404167225df6)</small> </font> </div></span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-PC_InlandMarineSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-PC_InlandMarineSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.OrangeHRM.testscripts.AdminTestSuite</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">init(org.testng.TestRunner@38320e34)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="test-method">
+                <span class="method-name">TC101(chrome)</span>
+                <span class="method-start">16137 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TC102(chrome)</span>
+                <span class="method-start">16439 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

@@ -1,0 +1,52 @@
+---
+version: 0.2
+globalTimeout: 150
+testSuiteTimeout: 150
+testSuiteStep: 150
+
+runson: win
+
+autosplit: false
+retryOnFailure: false
+tunnel: true
+
+maxRetries: 1
+concurrency: 5
+
+# shell: bash
+
+env:
+  CACHE_DIR: m2_cache_dir
+
+cacheKey: '{{ checksum "pom.xml" }}'
+cacheDirectories:
+  - $CACHE_DIR
+
+pre:
+  - mvn -Dmaven.repo.local=./.m2 dependency:resolve
+
+#uploadArtefacts:
+# - name: ExtentReports
+#   path:
+#     - test-output/**
+#    - reports/json/**
+
+framework:
+  name: maven/testng
+  defaultReports: false
+  discoveryType: method
+  flags: ["-Dtestngxml=PC_PersonalAutoSuite","-Plocal"]
+  
+report: true
+
+partialReports:
+  frameworkName: testng
+  location: target/surefire-reports/
+  type: html
+  
+runtime:
+  language: java
+  version: "11"
+  
+jobLabel: [GW_Hyperexecute,PC_PersonalAutoSuite]
+  
