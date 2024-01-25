@@ -603,9 +603,11 @@ public class WebDriverFactory {
 							? configProperty.getProperty("headless")
 									: "false";
 
-					if (!headless.equals("true") && !headless.equals("false"))
-						headless = "false";
-
+//					if (!headless.equals("true") && !headless.equals("false"))
+//						headless = "false";
+					if (headless.equals("true") && !headless.equals("false"))
+						chromeOpt.addArguments("--headless");
+					
 					//chromeOpt.setHeadless(Boolean.parseBoolean(headless));
 //					chromeOpt.addArguments("--remote-allow-origins=*");
 //					chromeOpt.setBrowserVersion("116.0.5845.111");
@@ -617,7 +619,7 @@ public class WebDriverFactory {
 					//driver = new RemoteWebDriver(hubURL, chromeCapabilities1);
 //					WebDriverManager.chromedriver().setup();
 //					driver = new ChromeDriver(chromeOpt);
-					driver = new ChromeDriver();
+					driver = new ChromeDriver(chromeOpt);
 					driver.manage().window().maximize();
 				}
 			} else if ("iexplorer".equalsIgnoreCase(browser)) {

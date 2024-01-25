@@ -10,8 +10,8 @@
 	<listeners>
 		<listener class-name="com.OrangeHRM.utils.EmailReport" />
 		<!-- <listener class-name="com.OrangeHRM.utils.LiveReportListener"/>
-		<listener class-name="com.OrangeHRM.utils.RetryListener" /> 
-		<listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener"/>-->
+		<listener class-name="com.OrangeHRM.utils.RetryListener" /> -->
+		<listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener"/>
 	</listeners>
 	<test verbose="2" name="Report"><!-- Total Count = 15 -->
 			<classes>
