@@ -934,7 +934,6 @@ public class Log  {
 			finalDecision = false;
 		}
 
-		//  
 		if (configProperty.getProperty("isTakeScreenShot") != null
 				&& configProperty.getProperty("isTakeScreenShot").equalsIgnoreCase("false")) {
 			finalDecision = false;

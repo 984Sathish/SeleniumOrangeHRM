@@ -127,7 +127,6 @@ public class MyInfoPage extends LoadableComponent<MyInfoPage>{
 			String textOpt = optionElements.get(i).getText();
 			if(optValue.equals(textOpt)) {
 				BrowserActions.click(driver, optionElements.get(i), textOpt);
-				Log.messageStep(txtLabel +": "+optValue+ " selected", driver);
 				found = true;
 				break;
 			}
