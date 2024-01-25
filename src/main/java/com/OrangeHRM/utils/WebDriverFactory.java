@@ -54,6 +54,7 @@ import org.testng.xml.XmlTest;
 
 import com.OrangeHRM.data.HarSummary;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import net.lightbody.bmp.core.har.Har;
 import net.lightbody.bmp.core.har.HarEntry;
 import net.lightbody.bmp.core.har.HarLog;
@@ -618,8 +619,16 @@ public class WebDriverFactory {
 
 					//driver = new RemoteWebDriver(hubURL, chromeCapabilities1);
 //					WebDriverManager.chromedriver().setup();
-//					driver = new ChromeDriver(chromeOpt);
-					driver = new ChromeDriver(chromeOpt);
+//					driver = new ChromeDriver();
+					//driver = new ChromeDriver(chromeOpt);
+					//set headless
+					ChromeOptions options = new ChromeOptions();
+					options.addArguments("--headless=new");
+					
+					//web driver setup
+					WebDriverManager.chromedriver().setup();
+					driver = new ChromeDriver(options);
+					
 					driver.manage().window().maximize();
 				}
 			} else if ("iexplorer".equalsIgnoreCase(browser)) {
