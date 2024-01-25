@@ -27,6 +27,7 @@ import com.OrangeHRM.utils.BrowserActions;
 import com.OrangeHRM.utils.ElementLayer;
 import com.OrangeHRM.utils.Log;
 import com.OrangeHRM.utils.WaitUtils;
+import com.OrangeHRM.webdriverManager.DriverManager;
 
 import ASPIREAI.customfactories.AjaxElementLocatorFactory;
 import ASPIREAI.customfactories.IFindBy;
@@ -491,8 +492,9 @@ public class RecruitmentPage extends LoadableComponent<RecruitmentPage>{
 	 * @param driver
 	 * @param lstCandidatInfo
 	 * @return RecruitmentPage
+	 * @throws InterruptedException 
 	 */
-	public RecruitmentPage validateCandidateDetails(WebDriver driver, ArrayList<String> lstCandidatInfo) {
+	public RecruitmentPage validateCandidateDetails(WebDriver driver, ArrayList<String> lstCandidatInfo) throws InterruptedException {
 		ArrayList<String> actList = new ArrayList<String>();
 		By row = By.cssSelector("div[class='oxd-table-card']");
 		BrowserActions.waitForElementToDisplay(driver, row, "Table rows");
@@ -500,8 +502,8 @@ public class RecruitmentPage extends LoadableComponent<RecruitmentPage>{
 		if(rowSize == 1){
 			List<WebElement> columns = driver.findElements(By.cssSelector("div[class='oxd-table-cell oxd-padding-cell'] div"));
 			for (WebElement col : columns) {
-				if(col.getText() != "") {	
-					String colText = BrowserActions.getText(driver, col, "Employee list column");
+				if(!(col.getText().equals(""))  && col.getText().length() != 0) {
+					String colText = BrowserActions.getText(driver, col, "Table field");
 					actList.add(colText);
 				}
 			}
@@ -509,7 +511,7 @@ public class RecruitmentPage extends LoadableComponent<RecruitmentPage>{
 			Collections.sort(actList);
 			Collections.sort(lstCandidatInfo);
 			boolean equal = actList.containsAll(lstCandidatInfo);
-			Log.assertThat(equal, "Candidate Details is verified successfully", "Failed to verify Candidate details", driver);
+			Log.assertThat(equal, "Candidate Details is verified successfully", "Failed to verify Candidate details", DriverManager.getDriver());
 			lstCandidatInfo.clear();
 		}
 		return this;

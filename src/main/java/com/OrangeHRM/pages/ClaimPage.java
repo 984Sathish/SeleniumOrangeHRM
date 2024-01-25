@@ -325,8 +325,9 @@ public class ClaimPage extends LoadableComponent<ClaimPage>{
 	 * @param driver
 	 * @param claimDetails
 	 * @return TimePage
+	 * @throws InterruptedException 
 	 */
-	public ClaimPage validateClaimDetails(WebDriver driver, ArrayList<String> claimDetails) {
+	public ClaimPage validateClaimDetails(WebDriver driver, ArrayList<String> claimDetails) throws InterruptedException {
 		ArrayList<String> actList = new ArrayList<String>();
 		By row = By.cssSelector("div[class='oxd-table-card']");
 		BrowserActions.waitForElementToDisplay(driver, row, "Table rows");
@@ -334,8 +335,8 @@ public class ClaimPage extends LoadableComponent<ClaimPage>{
 		if(rowSize == 1){
 			List<WebElement> columns = driver.findElements(By.cssSelector("div[class='oxd-table-cell oxd-padding-cell'] div"));
 			for (WebElement col : columns) {
-				if(col.getText() != "") {	
-					String colText = BrowserActions.getText(driver, col, "Employee list column");
+				if(!(col.getText().equals(""))  && col.getText().length() != 0) {
+					String colText = BrowserActions.getText(driver, col, "Table field");
 					actList.add(colText);
 				}
 			}

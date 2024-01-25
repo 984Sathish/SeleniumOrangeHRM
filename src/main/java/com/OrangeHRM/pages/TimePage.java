@@ -19,6 +19,7 @@ import com.OrangeHRM.utils.BrowserActions;
 import com.OrangeHRM.utils.ElementLayer;
 import com.OrangeHRM.utils.Log;
 import com.OrangeHRM.utils.WaitUtils;
+import com.OrangeHRM.webdriverManager.DriverManager;
 
 import ASPIREAI.customfactories.AjaxElementLocatorFactory;
 import ASPIREAI.customfactories.IFindBy;
@@ -159,15 +160,15 @@ public class TimePage extends LoadableComponent<TimePage>{
 		if(rowSize == 1){
 			List<WebElement> columns = driver.findElements(By.cssSelector("div[class='oxd-table-cell oxd-padding-cell'] div"));
 			for (WebElement col : columns) {
-				if(col.getText() != "") {	
-					String colText = BrowserActions.getText(driver, col, "Employee list column");
+				if(!(col.getText().equals(""))  && col.getText().length() != 0) {
+					String colText = BrowserActions.getText(driver, col, "Table field");
 					actList.add(colText);
 				}
 			}
 			writeJsonFile(actList);
 			Collections.sort(actList);
 			boolean equal = actList.contains(userName);
-			Log.assertThat(equal, "Leave Details is verified successfully", "Failed to verify Leave details", driver);
+			Log.assertThat(equal, "Leave Details is verified successfully", "Failed to verify Leave details", DriverManager.getDriver());
 		}
 		return this;
 	}

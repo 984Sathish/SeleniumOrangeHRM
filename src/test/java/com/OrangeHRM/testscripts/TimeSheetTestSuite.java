@@ -27,6 +27,8 @@ public class TimeSheetTestSuite {
 	private static EnvironmentPropertiesReader configProperty = EnvironmentPropertiesReader.getInstance();
 	ArrayList<String> timeSheetDetails = new ArrayList<String>();; 
 
+	protected static ThreadLocal<WebDriver> threadLocalDriver = new ThreadLocal<>();
+	
 	@BeforeTest(alwaysRun = true)
 	public void init(ITestContext context) {
 		webSite = (System.getProperty("webSite") != null ? System.getProperty("webSite"): context.getCurrentXmlTest().getParameter("webSite"));

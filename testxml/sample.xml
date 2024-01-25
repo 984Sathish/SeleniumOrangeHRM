@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="PC_InlandMarineSuite" preserve-order="true" verbose="5" parallel="methods" thread-count="2">  <!-- parallel="methods" thread-count="1" -->
+<suite name="PC_InlandMarineSuite" preserve-order="true" verbose="5" parallel="methods" thread-count="1">  <!-- parallel="methods" thread-count="1" -->
 	<parameter name="deviceHost" value="localhost" />
 	<parameter name="devicePort" value="4444" />
 	<parameter name="browserName" value="chrome" />
@@ -14,13 +14,13 @@
 		<listener class-name="com.epam.reportportal.testng.ReportPortalTestNGListener"/>-->
 	</listeners>
 	<test verbose="2" name="Report"><!-- Total Count = 15 -->
-		<classes>
+			<classes>
+			<class name="com.OrangeHRM.testscripts.RecruitmentTestSuite"/>
+			<class name="com.OrangeHRM.testscripts.TimeSheetTestSuite"/> 
 			<class name="com.OrangeHRM.testscripts.AdminTestSuite"/> 
 			<class name="com.OrangeHRM.testscripts.ClaimTestSuite"/> 
 			<class name="com.OrangeHRM.testscripts.EmployeeTestSuite"/> 
 			<class name="com.OrangeHRM.testscripts.LeaveTestSuite"/> 
-			<class name="com.OrangeHRM.testscripts.RecruitmentTestSuite"/> 
-			<class name="com.OrangeHRM.testscripts.TimeSheetTestSuite"/> 
 		</classes>
 	</test>
 </suite>

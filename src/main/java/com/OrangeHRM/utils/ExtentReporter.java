@@ -317,7 +317,8 @@ public class ExtentReporter {
 	 */
 	
 	public static void infoStep(String message, int steps) {
-	    getTest().log(LogStatus.INFO, "Step " + steps + ": " + message);
+	    getTest().log(LogStatus.INFO, null, message);
+	    //getTest().log(LogStatus.INFO, "Step " + steps + ": " + message);
 	}
 
 

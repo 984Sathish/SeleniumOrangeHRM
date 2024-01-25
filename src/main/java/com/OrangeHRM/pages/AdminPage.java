@@ -235,8 +235,9 @@ public class AdminPage extends LoadableComponent<AdminPage>{
 	 * @param driver
 	 * @param userDetails
 	 * @return AdminPage
+	 * @throws InterruptedException 
 	 */
-	public AdminPage deleteUser(WebDriver driver, UserDetails userDetails) {
+	public AdminPage deleteUser(WebDriver driver, UserDetails userDetails) throws InterruptedException {
 		PimPage pimPage = new PimPage(driver);
 		pimPage.VerifyTableAndDelete(driver,userDetails.getUsername());
 		return this;

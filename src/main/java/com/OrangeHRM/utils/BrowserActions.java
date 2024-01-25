@@ -934,5 +934,18 @@ public class BrowserActions{
 		}
 		return webElements;
 	}
+	
+	public static String getElementText(WebDriver driver, WebElement webElement, String elementDescription) {
+		String elementTextValue = null;
+		try {
+			if (!Utils.waitForElement(driver, webElement))
+				elementTextValue =  webElement.getText();
+			Log.event("Text value displayed for "+elementDescription+" : "+elementTextValue);
+		}catch(TimeoutException e){
+			Log.fail("Text value not displayed for "+elementDescription+" : "+elementTextValue);
+		}
+		return elementTextValue;
+	}
+
 
 }

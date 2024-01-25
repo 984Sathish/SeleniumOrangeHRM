@@ -93,7 +93,7 @@ public class DashboardPage extends LoadableComponent<DashboardPage>{
 		BrowserActions.waitForElementToDisplay(driver, txtMenu, menu.getName());
 		WebElement btnMenu = txtMenu.findElement(driver);
 		BrowserActions.click(driver, btnMenu, menu.getName());	
-		Log.message("Main menu : " + menu.getName()+ " selected" , driver);
+		Log.messageStep("Main menu : " + menu.getName()+ " selected" , driver);
 		return menu;
 	}
 

@@ -27,6 +27,8 @@ public class RecruitmentTestSuite {
 	String webSite, browser;
 	private static EnvironmentPropertiesReader configProperty = EnvironmentPropertiesReader.getInstance();
 	ArrayList<String> lstCandidateDetails = new ArrayList<String>();; 
+	
+	protected static ThreadLocal<WebDriver> threadLocalDriver = new ThreadLocal<>();
 
 	@BeforeTest(alwaysRun = true)
 	public void init(ITestContext context) {
@@ -75,7 +77,7 @@ public class RecruitmentTestSuite {
 					.email(testData.getEmail())
 					.build());
 
-			lstCandidateDetails.add(testData.getCurrentDate());
+			//lstCandidateDetails.add(testData.getCurrentDate());
 
 			recruitmentPage.enterApplicationDate(driver, AddCandidate.DATE_OF_APPLICATION, CandidateDetails.builder()
 					.dateOfApplication(testData.getCurrentDate())
@@ -128,6 +130,8 @@ public class RecruitmentTestSuite {
 			recruitmentPage.SaveHireCandidate(driver);
 
 			recruitmentPage.verifyToastMessage(driver);
+			
+			recruitmentPage.verifyHiredMsg(driver);
 
 			recruitmentPage = (RecruitmentPage) dashboardPage.mainMenuSelection(driver, DashboardConstants.menuName.RECRUITMENT);
 

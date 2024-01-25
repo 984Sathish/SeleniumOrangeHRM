@@ -347,8 +347,9 @@ public class PimPage extends LoadableComponent<PimPage>{
 	 * @author sathish.suresh
 	 * @param driver
 	 * @return MyInfoPage
+	 * @throws InterruptedException 
 	 */
-	public MyInfoPage validateEmployeeListAndClick(WebDriver driver) {
+	public MyInfoPage validateEmployeeListAndClick(WebDriver driver) throws InterruptedException {
 		ArrayList<String> actList = new ArrayList<String>();
 		By row = By.cssSelector("div[class='oxd-table-card']");
 		BrowserActions.waitForElementToDisplay(driver, row, "Table rows");
@@ -357,13 +358,16 @@ public class PimPage extends LoadableComponent<PimPage>{
 
 			List<WebElement> columns = driver.findElements(By.cssSelector("div[class='oxd-table-cell oxd-padding-cell'] div"));
 			for (WebElement col : columns) {
-				if(col.getText() != "") {
-					String colText = BrowserActions.getText(driver, col, "Employee list column");
+				if(!(col.getText().equals(""))  && col.getText().length() != 0) {
+					String colText = BrowserActions.getText(driver, col, "Table field");
 					actList.add(colText);
 				}
 			}
 			Collections.sort(actList);
 			Collections.sort(lstEmployeesInfo);
+			
+			System.out.println(actList);
+			System.out.println(lstEmployeesInfo);
 			boolean equal = actList.equals(lstEmployeesInfo);
 			Log.assertThat(equal, "Employee Details is verified successfully", "Failed to verify employee details", driver);
 			if(equal) {
@@ -428,8 +432,8 @@ public class PimPage extends LoadableComponent<PimPage>{
 
 			List<WebElement> columns = driver.findElements(By.cssSelector("div[class='oxd-table-cell oxd-padding-cell'] div"));
 			for (WebElement col : columns) {
-				if(col.getText() != "") {	
-					String colText = BrowserActions.getText(driver, col, "Employee list column");
+				if(!(col.getText().equals(""))  && col.getText().length() != 0) {
+					String colText = BrowserActions.getText(driver, col, "Table field");
 					actList.add(colText);
 				}
 			}
@@ -448,8 +452,9 @@ public class PimPage extends LoadableComponent<PimPage>{
 	 * @author sathish.suresh
 	 * @param driver
 	 * @param value
+	 * @throws InterruptedException 
 	 */
-	public void VerifyTableAndDelete(WebDriver driver, String value) {
+	public void VerifyTableAndDelete(WebDriver driver, String value) throws InterruptedException {
 		ArrayList<String> actList = new ArrayList<String>();
 		By row = By.cssSelector("div[class='oxd-table-card']");
 		BrowserActions.waitForElementToDisplay(driver, row, "Table rows");
@@ -458,8 +463,8 @@ public class PimPage extends LoadableComponent<PimPage>{
 
 			List<WebElement> columns = driver.findElements(By.cssSelector("div[class='oxd-table-cell oxd-padding-cell'] div"));
 			for (WebElement col : columns) {
-				if(col.getText() != "") {
-					String colText = BrowserActions.getText(driver, col, "Employee list column");
+				if(!(col.getText().equals(""))  && col.getText().length() != 0) {
+					String colText = BrowserActions.getText(driver, col, "Table field");
 					actList.add(colText);
 				}
 			}
@@ -482,8 +487,9 @@ public class PimPage extends LoadableComponent<PimPage>{
 	 * @param driver
 	 * @param employeeId
 	 * @return PimPage
+	 * @throws InterruptedException 
 	 */
-	public PimPage deleteEmployee(WebDriver driver, String employeeId) {
+	public PimPage deleteEmployee(WebDriver driver, String employeeId) throws InterruptedException {
 		VerifyTableAndDelete(driver, employeeId);
 		return this;
 	}

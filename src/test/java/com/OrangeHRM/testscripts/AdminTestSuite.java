@@ -35,6 +35,7 @@ public class AdminTestSuite {
 		browser = (configProperty.getProperty("browserName")) != null ? (configProperty.getProperty("browserName")) : context.getCurrentXmlTest().getParameter("browserName");
 	}
 
+
 	/**
 	 * Test Description: Create a System User(Admin)
 	 * Test ID: TC101
