@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="1" parallel="methods" name="Failed suite [PC_InlandMarineSuite]" guice-stage="DEVELOPMENT" verbose="5">
-  <parameter name="webSite" value="https://opensource-demo.orangehrmlive.com"/>
+  <parameter name="webSite" value="https://operrnsource-demo.orangehrmlive.com"/>
   <parameter name="reportPortal" value="Yes"/>
   <parameter name="deviceHost" value="localhost"/>
   <parameter name="devicePort" value="4444"/>

@@ -28,6 +28,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.MutableCapabilities;
 import org.openqa.selenium.Platform;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.Proxy;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
@@ -606,8 +607,6 @@ public class WebDriverFactory {
 
 //					if (!headless.equals("true") && !headless.equals("false"))
 //						headless = "false";
-					if (headless.equals("true") && !headless.equals("false"))
-						chromeOpt.addArguments("--headless");
 					
 					//chromeOpt.setHeadless(Boolean.parseBoolean(headless));
 //					chromeOpt.addArguments("--remote-allow-origins=*");
@@ -621,14 +620,16 @@ public class WebDriverFactory {
 //					WebDriverManager.chromedriver().setup();
 //					driver = new ChromeDriver();
 					//driver = new ChromeDriver(chromeOpt);
-					//set headless
+					
 					ChromeOptions options = new ChromeOptions();
-					options.addArguments("--headless=new");
+					
+					//set headless
+					if (headless.equals("true") && !headless.equals("false"))
+						options.addArguments("--headless=new");
 					
 					//web driver setup
 					WebDriverManager.chromedriver().setup();
 					driver = new ChromeDriver(options);
-					
 					driver.manage().window().maximize();
 				}
 			} else if ("iexplorer".equalsIgnoreCase(browser)) {

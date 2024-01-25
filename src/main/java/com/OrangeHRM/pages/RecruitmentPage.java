@@ -354,7 +354,7 @@ public class RecruitmentPage extends LoadableComponent<RecruitmentPage>{
 	 * @return RecruitmentPage
 	 */
 	public RecruitmentPage enterInterviewName(WebDriver driver, String interviewrName) {
-
+		((JavascriptExecutor) driver).executeScript("window.scrollBy(0, 300);");
 		Actions actions = new Actions(driver);
 		boolean found = false;
 		while(!found) {
